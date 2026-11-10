@@ -46,6 +46,7 @@ python3 python/vat_check.py DE 136695976
 node    js/vat_check.mjs DE 136695976
 ```
 
+
 ## Pricing
 
 Each API has a free BASIC plan; paid plans (higher monthly quotas) are
@@ -61,6 +62,7 @@ every example in this repository.
 - Japanese holidays are based on the Cabinet Office's official calendar.
 - The VAT checker validates number structure and check digits only. It
   does not confirm that a number is registered to a business.
+- **Rate limits:** Free-tier requests may be rate-limited (HTTP 429). If this occurs, wait before retrying and follow any Retry-After header or plan-specific limits.
 
 ## License
 
